@@ -8,21 +8,21 @@
 </head>
 <body>
 
+  <h1>Mi Lista de Tareas</h1>
+  <h2><p>Nombre del estudiante: Alison Alanuca</p></h2>
+
+
   <form id="formlista_tareas">
-    <h1>Lista de Tareas</h1>
 
 
-    <label>Nombre del estudiante:</label>
-    <input type="text" id="nombre" required />
-
-    <label>Nombre de la tarea (máximo 25 caracteres):</label>
-    <input type="text" id="nombretarea" maxlength="25" required />
+    <label>Nombre de la tarea:</label>
+    <input type="text" placeholder="Ingrese maximo 25 caracteres" id="nombretarea" maxlength="25" required />
 
     <label>Fecha de entrega:</label>
     <input type="date" id="fecha" required />
 
     <label>Descripción:</label>
-    <textarea id="descripcion" rows="4"></textarea>
+    <textarea placeholder="Agregue una descripcion de su tarea" id="descripcion" rows="4"></textarea>
 
     <label>Tipo:</label>
     <select id="tipo" required>

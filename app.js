@@ -7,7 +7,7 @@ document.getElementById("formlista_tareas").addEventListener("submit", function(
     const tipo = document.getElementById("tipo").value;
     const prioridad = document.querySelector('input[name="prioridad"]:checked');
   
-    if (!nombre || !nombretarea || !fecha || !tipo || !prioridad) {
+    if (!nombre || !fecha || !tipo || !prioridad) {
       alert("Completa todos los campos obligatorios.");
       return;
     }
@@ -20,16 +20,18 @@ document.getElementById("formlista_tareas").addEventListener("submit", function(
       prioridad: prioridad.value
     };
   
-    mostrarTarea(tarea);
+    agregartarea(tarea);
     this.reset();
   });
   
   
-  function mostrarTarea(tarea) {
+  function agregartarea(tarea) {
     const contenedor = document.getElementById("lista");
   
     const tarjeta = document.createElement("div");
     tarjeta.classList.add("tarea");
+  
+    tarjeta.classList.add(tarea.prioridad.toLowerCase());
   
     tarjeta.innerHTML = `
       <h3>${tarea.nombre} <small>(${tarea.prioridad})</small></h3>

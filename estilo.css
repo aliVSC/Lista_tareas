@@ -26,10 +26,8 @@ body {
     background-color: #eae1ef;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    margin-bottom: 30px;
-
+    box-shadow: 0 0 8px #a11ee3;
+    max-width: 900px; 
   }
   
   form label {
@@ -44,7 +42,7 @@ body {
   form input[type="date"],
   form select,
   form textarea {
-    width: 100%;
+    width: 98%;
     padding: 8px;
     margin-top: 4px;
     border: none;
@@ -73,12 +71,33 @@ body {
     background-color: #f2c7e8;
   }
   
-  #lista .tarea {
-    background-color: #ece5e6;
-    border-left: 3px solid #ef8a9c;
-    border-right: 3px solid #ef8a9c;
-    padding: 25px;
-    margin-bottom: 15px;
-    border-radius: 15px;
-    box-shadow: 0 0 6px #e47689;
+
+  #lista {
+    margin-top: 30px;
   }
+
+
+  #lista .tarea.urgente {
+    background-color: #fafbfd;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px #fa012a;
+  }
+
+  #lista .tarea.normal {
+    background-color: #fafbfd;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px #b537f4;
+  }
+
+  #lista .tarea.bajo {
+    background-color: #fafbfd;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px #ef67cf;
+  }
+  

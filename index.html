@@ -7,11 +7,49 @@
   <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-  <h1>Mi Lista de Tareas</h1>
-  <p>Nombre del estudiante: __________________________</p>
 
-  <!-- Aquí irá el formulario y la lista generada con JavaScript -->
+  <form id="formlista_tareas">
+    <h1>Lista de Tareas</h1>
+
+
+    <label>Nombre del estudiante:</label>
+    <input type="text" id="nombre" required />
+
+    <label>Nombre de la tarea (máximo 25 caracteres):</label>
+    <input type="text" id="nombretarea" maxlength="25" required />
+
+    <label>Fecha de entrega:</label>
+    <input type="date" id="fecha" required />
+
+    <label>Descripción:</label>
+    <textarea id="descripcion" rows="4"></textarea>
+
+    <label>Tipo:</label>
+    <select id="tipo" required>
+      <option value="">Seleccione un tipo</option>
+      <option value="Universidad">Universidad</option>
+      <option value="Personal">Personal</option>
+      <option value="Trabajo">Trabajo</option>
+      <option value="Hobby">Hobby</option>
+    </select>
+
+
+    <label>De que nivel de prioridad es tu tarea:</label>
+    <div class="prioridad-radio">
+      <label><input type="radio" name="prioridad" value="Urgente" /> Urgente</label>
+      <label><input type="radio" name="prioridad" value="Normal" /> Normal </label>
+      <label><input type="radio" name="prioridad" value="Bajo" /> Bajo</label>
+    </div>
+
+    <button type="submit">Agregar tarea</button>
+  </form>
+
+  <section id="lista"></section>
 
   <script src="app.js"></script>
 </body>
+
+<footer>
+  <p>&copy; 2025 Alison Alanuca UPS</p>
+</footer>
 </html>

@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  footer {
+
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+    width: 100%; 
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+  
+  h1 {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+  }
+  
+  form {
+    background-color: #efdfe2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="date"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .prioridad-radio {
+    display: flex;
+    gap: 45px;
+    margin-top: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff00b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #lista .tarea {
+    background-color: #ece5e6;
+    border-left: 3px solid #ef8a9c;
+    border-right: 3px solid #ef8a9c;
+    padding: 25px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px #e47689;
+  }
